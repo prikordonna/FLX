@@ -91,7 +91,6 @@ h2 + p {
 }
 
 .flex-2-col .tm-section-description::first-letter {
-    font-size: 200%;
     color: #18afb4f3;
 }
 
