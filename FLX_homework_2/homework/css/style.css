@@ -1,0 +1,163 @@
+@media print {
+    .tm-sidebar, #about, .heading, .blocks, #ideas, #contact, .img-contact-us {
+        display: none;
+    }
+
+    .container {
+        max-width: 85vw;
+    }
+
+    .tm-content-box .tm-banner {
+        border: none;
+    }
+
+    .tm-content-header {
+        margin: 0 60px;
+    } 
+
+    .flex-2-col {
+        margin: 0 30px 0 35px;
+    }
+
+    .flex-item > h2 {
+        color: #1901f1;
+    }
+
+    .flex-item img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .tm-banner-text::first-letter,
+    .tm-section-description::first-letter,
+    .text-xs-center::first-letter {
+        color: #18afb4;
+    }
+
+    .container section::before {
+        content: none;
+    }
+}
+
+li > h2,
+.submit-btn,
+.tm-sidebar li
+ {
+    transition: .3s ease-in-out;
+}
+
+li > h2:hover {
+    background-color: #87CEFA;
+    color: #ffffff;
+}
+
+p::first-letter {
+    color: #87CEFA;
+    font-size: 30px;
+}
+
+.tm-sidebar,
+.tm-content-box,
+.blocks {
+    box-shadow: 0px 0px 9px 2px #9e9e9ea8;
+}
+
+.blocks .tm-content-box {
+    box-shadow: none;
+}
+
+.tm-banner {
+    border: 30px solid #f1f1f1;
+    padding: 0;
+}
+
+#tmCarousel h2 {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+h2 + p {
+    font-style: italic;
+}
+
+.tm-content-box.flex-2-col {
+    display: flex;
+    align-items: center;
+}
+
+.tm-content-box .tm-section-description {
+    line-height: 1.9rem;
+    text-indent: 1.6rem;
+}
+
+.flex-2-col .tm-section-description::first-letter {
+    font-size: 200%;
+    color: #18afb4f3;
+}
+
+.heading ol a {
+  color: #000000;    
+}
+
+.heading ol a:hover {
+    color: #6ac5faf3;
+    text-decoration-style: double;
+}
+
+.heading ol a:visited {
+    text-decoration: underline;
+}
+
+.heading .text::after {
+    display: inline-block;
+    content: "New";
+    color: #ff0000;
+    font-size: 11px;
+    vertical-align: top;
+}
+
+.box-work {
+    padding: 10px;
+}
+
+.box-work:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.box-work p::first-letter {
+    color: #000000;
+}
+
+.submit-btn {
+    float: right;
+    width: 140px;
+    height: 45px;
+    color: #87CEFA;
+    background-color: #ffffff;
+    border: 1px solid #87CEFA;
+    border-radius: 3%;
+}
+
+.submit-btn:hover {
+    background-color: #87CEFA;
+    color: #ffffff;
+    border: 1px solid #1ea6fa;
+} 
+
+.mandatory-field::after {
+    content: "*";
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tm-sidebar li:hover{
+    background-color: #f1f1f1;
+}
+
+section::before {
+    content: "";
+    border: 40px solid transparent;	
+    border-left: 250px solid #5fbbf8; 
+    border-top: 0px solid #5fbbf8;
+}
