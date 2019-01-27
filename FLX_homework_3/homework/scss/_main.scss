@@ -1,0 +1,186 @@
+body{
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    margin: 0 auto;
+    background-color: $mainBackground;
+}
+.main-wrapper {
+    header {
+        height: 100vh;
+        background-image: $backgroundImage;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .top-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+
+            .logo img {
+                width: 200px;
+            }
+
+            nav a {
+                display: inline-block;
+                padding: 15px 100px;
+                border-right: $bordeNavigation;
+                text-decoration: none;
+                color: $headerFontColor;
+                text-transform: uppercase;
+            }
+        }
+        section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $headerFontColor;
+            text-transform: uppercase;
+
+            a { 
+                background-color: $buttonBackground;
+                padding: 15px 60px;
+                text-decoration: none;
+                color: $buttonColor;
+            }
+        }
+    }
+    main {
+        width: 70%;
+        margin: 0 auto;
+        .toolbar {
+            display: block;
+            float: right;
+            margin: 20px 0 10px 0;
+            input {
+                background-color: $mainBackground;
+                padding: 8px 15px;
+                border: $borderColor;
+            }
+        }
+        .post-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1 {
+                color: $mainFontColor;
+                text-align: right;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            article {
+                background-color: $blockBackgroundColor;
+                display: flex;
+                margin-bottom: 20px;
+                padding: 10px;
+                .post {
+                    padding: 10px;
+
+                    .post-description {
+                        padding: 5px;
+                        color: $postDescriptionColor;
+                    }
+                    h3 {
+                        color: $headingsColor;
+                        text-transform: uppercase;
+                        border-top: $borderColor;
+                        margin: 0;
+                        padding-top: 5px;
+                    }
+                    p {
+                        color: $mainFontColor;
+                        margin: 0;
+                        padding-top: 5px;
+                    }
+                }
+                .btn {
+                    background-color: $buttonBackground;
+                    padding: 10px 70px;
+                    margin: 10px;
+                    text-transform: uppercase;
+                    color: $buttonColor;
+                    border: none;
+                    float: right;
+                }
+            }
+        }
+        .about {
+            h1 {
+                color: $mainFontColor;
+                text-align: right;
+                margin: 20px 0;
+                padding: 0;
+                text-transform: uppercase;
+            }
+            p {
+                color: $mainFontColor;
+            }
+            img {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+        .contact-form {
+            h1, h4 {
+                color: $mainFontColor;
+                text-transform: uppercase;
+                margin: 0;
+                text-align: right;
+            }
+            form {
+                margin: 5px 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
+                label {
+                    text-align: right;
+                    margin: 5px 0;
+                    display: block;
+                    color: $headingsColor;
+                }
+                label span {
+                    color: $headingsColor;
+                    size: 12px;
+                }
+                p {
+                    margin: 5px 0;
+                }
+                p:nth-child(3), p:nth-child(4) {
+                    grid-column: 1 / 3;
+                }
+                input {
+                    background-color: $mainBackground;
+                    border: $borderColor;
+                    width: 99%;
+                    height: 30px;
+                }
+                textarea {
+                    background-color: $mainBackground;
+                    border: $borderColor;
+                    width: 99.4%;
+                    height: 100px;
+                }
+                button {
+                    color: $buttonColor;
+                    background-color: $buttonBackground;
+                    width: 20%;
+                    height: 35px;
+                    border: none;
+                    text-transform: uppercase;
+                    float: right;
+                    margin: 10px 0;
+                }
+            }
+        
+        }
+    }
+    footer {
+        margin: 10px 0 10px 20px;
+        color: $headingsColor;
+    }
+}

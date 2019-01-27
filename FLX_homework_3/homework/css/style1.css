@@ -1,0 +1,145 @@
+body {
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 0.625;
+  font-weight: normal 300;
+  margin: 0 auto;
+  background-color: #ffffff; }
+
+.main-wrapper header {
+  height: 100vh;
+  background-image: url(../img/header_background_v1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .main-wrapper header .top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; }
+    .main-wrapper header .top-wrapper .logo img {
+      width: 200px; }
+    .main-wrapper header .top-wrapper nav a {
+      display: inline-block;
+      padding: 15px 100px;
+      border-right: 1px solid #638b96;
+      text-decoration: none;
+      color: #f0f8ff;
+      text-transform: uppercase; }
+  .main-wrapper header section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f0f8ff;
+    text-transform: uppercase; }
+    .main-wrapper header section a {
+      background-color: #21a7a7;
+      padding: 15px 60px;
+      text-decoration: none;
+      color: #f0f8ff; }
+.main-wrapper main {
+  width: 70%;
+  margin: 0 auto; }
+  .main-wrapper main .toolbar {
+    display: block;
+    float: right;
+    margin: 20px 0 10px 0; }
+    .main-wrapper main .toolbar input {
+      background-color: #ffffff;
+      padding: 8px 15px;
+      border: 1px solid #638b96; }
+  .main-wrapper main .post-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .main-wrapper main .post-list h1 {
+      color: #000000;
+      text-align: right;
+      margin: 0;
+      text-transform: uppercase; }
+    .main-wrapper main .post-list article {
+      background-color: #eeeeee;
+      display: flex;
+      margin-bottom: 20px;
+      padding: 10px; }
+      .main-wrapper main .post-list article .post {
+        padding: 10px; }
+        .main-wrapper main .post-list article .post .post-description {
+          padding: 5px;
+          color: #ff0000; }
+        .main-wrapper main .post-list article .post h3 {
+          color: #21a7a7;
+          text-transform: uppercase;
+          border-top: 1px solid #638b96;
+          margin: 0;
+          padding-top: 5px; }
+        .main-wrapper main .post-list article .post p {
+          color: #000000;
+          margin: 0;
+          padding-top: 5px; }
+      .main-wrapper main .post-list article .btn {
+        background-color: #21a7a7;
+        padding: 10px 70px;
+        margin: 10px;
+        text-transform: uppercase;
+        color: #f0f8ff;
+        border: none;
+        float: right; }
+  .main-wrapper main .about h1 {
+    color: #000000;
+    text-align: right;
+    margin: 20px 0;
+    padding: 0;
+    text-transform: uppercase; }
+  .main-wrapper main .about p {
+    color: #000000; }
+  .main-wrapper main .about img {
+    width: 100%;
+    margin-bottom: 30px; }
+  .main-wrapper main .contact-form h1, .main-wrapper main .contact-form h4 {
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: right; }
+  .main-wrapper main .contact-form form {
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; }
+    .main-wrapper main .contact-form form label {
+      text-align: right;
+      margin: 5px 0;
+      display: block;
+      color: #21a7a7; }
+    .main-wrapper main .contact-form form label span {
+      color: #21a7a7;
+      size: 12px; }
+    .main-wrapper main .contact-form form p {
+      margin: 5px 0; }
+    .main-wrapper main .contact-form form p:nth-child(3), .main-wrapper main .contact-form form p:nth-child(4) {
+      grid-column: 1 / 3; }
+    .main-wrapper main .contact-form form input {
+      background-color: #ffffff;
+      border: 1px solid #638b96;
+      width: 99%;
+      height: 30px; }
+    .main-wrapper main .contact-form form textarea {
+      background-color: #ffffff;
+      border: 1px solid #638b96;
+      width: 99.4%;
+      height: 100px; }
+    .main-wrapper main .contact-form form button {
+      color: #f0f8ff;
+      background-color: #21a7a7;
+      width: 20%;
+      height: 35px;
+      border: none;
+      text-transform: uppercase;
+      float: right;
+      margin: 10px 0; }
+.main-wrapper footer {
+  margin: 10px 0 10px 20px;
+  color: #21a7a7; }
