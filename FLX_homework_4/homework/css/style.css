@@ -1,0 +1,280 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-color: #F3F3F3;
+    font-family: 'Open Sans', sans-serif;
+}
+
+span {
+    font-weight: 700;
+}
+header {
+    background-image: url(../img/sample2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: #f0f8ff;
+}
+
+.login-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-section p {
+    margin: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.login-buttons {
+    margin: 30px;
+}
+
+.login-buttons a {
+    margin: 0 40px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+}
+
+.title h1 {
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+
+.title h1 span {
+    font-size: 160%;
+}
+
+.title p {
+    margin: 10px 0;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.nav-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.nav-btn a {
+    width: 150px;
+    text-align: center;
+    padding: 13px;
+    border: 2px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0.26);
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.title-desc {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.title-desc p {
+    color: #000000;
+    width: 30%;
+    position: relative;
+    margin: 100px 140px 10px 20px;
+}
+
+.title-desc p:first-child {
+    color: #ffffff;
+    width: 45%;
+    position: relative;
+    margin: 5% 1% 5% 52%;
+    font-size: 14px;
+}
+
+.title-desc::before {
+    content: "";
+    position: absolute;
+    border-bottom: 150px solid transparent;
+    border-right: 98.5vw solid #000000;
+    bottom:  -150px;
+    z-index: -1;
+}
+
+main {
+    margin-top: 200px;
+}
+
+main h3 {
+    font-weight: 300;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.image {
+    width: 100%;
+    display: flex;
+    margin: 40px 0;
+}
+
+img {
+    margin: 0 30px;
+    width: 45%;
+    height: 300px;
+}
+.france {
+    margin: 266px 0 0 52px;
+    font-size: 12px;
+    color: #ffffff;
+    text-shadow: 0 0 2px #000000;
+    position: absolute;
+}
+.heart {
+    color: white;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    text-shadow: 0 0 2px #000000;
+    margin: 1% 0 0 40%;
+    position: absolute;
+}
+
+.right-section {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 50px;
+}
+
+.explore {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.explore article {
+    font-size: 14px;
+    margin: 25px 0 50px 0;
+    padding: 20px;
+    width: 15%;
+    box-shadow: 0 2px 5px #8f8f8f;
+}
+.explore button {
+    background-color: #097774;
+    border: none;
+    color: #FFFFFF;
+    width: 100%;
+    height: 30px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.subscribe {
+    display: block;
+    margin: 30px 10px;
+}
+.subscribe p {
+    font-size: 14px;
+}
+.subscribe form {
+    float: right;
+    margin: 0 10px 40px 0;
+}
+
+.subscribe form button, .contact section button {
+    color: #FFFFFF;
+    width: 80px;
+    height: 28px;
+    border: none;
+    font-weight: 700;
+    background-color: #097774;
+}
+.subscribe form input, .contact section input {
+    background-color: #F3F3F3;
+    border: 1px solid #000000;
+    height: 24px;
+    width: 140px;
+    text-align: center;
+    margin: 0 10px; 
+}
+.newLetters {
+    font-size: 20px;
+}
+
+.contact {
+    width: 100%;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%; 
+}
+
+.contact section {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    font-size: 14px;
+    margin: 40px 15px;
+}
+.contact section h5 {
+    display: contents;
+    font-size: 16px;
+}
+.contact section p {
+    margin: 10px 0 0 0;
+}
+.firstContact p {
+    color: #9e9e9e;
+}
+.secondContact p {
+    color: #9e9e9e;
+    font-style: italic;
+    padding-right: 20px;
+}
+.secondContact .hours {
+   color: #ebebeb;
+}
+.thirdContact p{
+    line-height: 1.6;
+    color: #9e9e9e;
+}
+.forthContact p {
+    color: #9e9e9e;
+}
+.contact-form {
+    margin-left: -11px;
+    display: flex;
+}
+
+.footer-nav {
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FFFFFF;
+    border-top: 3px solid #e8e8e8;
+}
+.footer-nav p {
+    color: #9e9e9e;
+    display: contents;
+}
+.footer-nav .navBott {
+    margin-right: initial;
+}
+.footer-nav nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+}
