@@ -1,0 +1,287 @@
+body {
+  font-family: roboto;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+
+/* Your styles go here */
+html, body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  background-color: #0b192f;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 15px; 
+}
+
+header {
+  background-color: #162b4d;
+  display: flex;
+  flex-direction: column;
+}
+
+header .fas {
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+header p {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  color: #fcfcfcbd;
+}
+
+header p span {
+  color: #B71757;
+}
+
+header nav  {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin: 20px;
+  font-size: 40px;
+  font-weight: 200;
+  color: #fcfcfcb7;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 25px;
+  margin: 20px;
+}
+
+p {
+  color: #ffffff62;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 20px;
+}
+
+.main-block{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-block img {
+  max-width: 100%;
+} 
+
+.main-block .block-description, .post-5  {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-block .date {
+  text-align: center;
+  padding: 10px 10px 15px 10px;
+}
+
+.main-block .day {
+  font-size: 40px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.main-block .month {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0; 
+}
+
+.aside-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.aside-block img {
+  width: 100%;
+  height: 100%;
+}
+
+.aside-block article {
+  background-color: #fff;
+  max-width: 100%;
+  padding: 5px 20px;
+}
+
+.aside-block p {
+  color: #000000d3;
+}
+
+footer {
+  padding: 25px 0;
+  background-color: #162b4d;
+  text-align: center;
+  color: #ffffff63;
+}
+
+footer p {
+  margin: 5px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) { 
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .center-block {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px; 
+  }
+
+  aside {
+    width: 40%;
+  }
+} 
+
+@media screen and (min-width: 769px) {
+  * {
+    order: 0;
+  }
+
+  header {
+    background-color: #162b4d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header .fas {
+    display: none;
+  }
+
+  header p {
+    margin: 20px; 
+    width: 25%;
+    font-size: 30px;
+    text-align: left;
+  }
+  
+  header nav {
+    display: block;
+  }
+
+  header nav ul {
+    display: flex;
+    list-style: none;
+    width: 75%;
+    margin: 0 50px 0 0;
+  }
+
+  header nav ul li {
+    width: 100%;
+    padding: 30px;
+  }
+
+  header nav ul li a {
+    color: #ffffffd3;
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  header nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .center-block {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px; 
+  }
+
+  .main-block:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-block:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .main-block:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .main-block img, .main-block .block-description {
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .main-block .block-description {
+    display: flex;
+    flex-direction: row;
+  } 
+
+  .text {
+    width: 85%;
+  }
+
+  .main-block:nth-child(even) .date {
+    padding-left: 5px; 
+    order: -1;
+  }
+
+  .main-block:nth-child(even) .text {
+    text-align: right;
+  }
+
+  .post-5  {
+    width: 100%;
+    height: 200px;
+  } 
+
+  aside {
+    width: 20%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .footer-left {
+    text-align: left;
+  }
+}
