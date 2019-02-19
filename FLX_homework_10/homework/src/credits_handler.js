@@ -8,7 +8,6 @@ function userCard(index) {
   const percent = 0.005;
 
   return {
-
     getCardOptions() {
       return defaults;
     },
