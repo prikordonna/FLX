@@ -1,0 +1,116 @@
+main {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    font-family: monospace;
+    border: 1px solid #000000;
+}
+
+button {
+    width: 22px;
+    height: 22px;
+    background-color: #000000;
+    border: none;
+    border-radius: 3px;
+    padding: 2px;
+    color: #ffffff;
+}
+
+main span {
+    text-transform: uppercase;
+}
+
+main h1 {
+    text-transform: capitalize;
+    font-weight: 300;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+main form {
+    border-bottom: 2px solid #000000;
+    margin-bottom: 10px;
+}
+
+form button {
+    position: relative;
+    top: 4px;
+}
+
+form button .material-icons {
+    font-size: 18px;
+}
+
+form input {
+    width: 92%;
+    padding: 3px;
+    margin: 0 0 15px 15px;
+    color: #b4b4b4;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+
+form .warning{
+    text-align: center;
+    font-size: 16px;
+    color: #ff0000;
+    margin: 5px;
+}
+
+main img {
+    width: 40px;
+    margin: 60px 0 5px 0;
+    align-self: center;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.listWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listWrapper .material-icons {
+    width: 4%;
+    font-size: 30px;
+    align-self: center;
+    margin-right: 4px; 
+}
+
+.listWrapper .listItem {
+    width: 10%;
+    align-self: center;
+    width: 22px;
+    height: 22px;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 3px;
+    padding: 2px;
+    color: #ffffff;
+}
+
+.listWrapper p {
+    width: 86%;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.listItem .material-icons {
+    position: relative;
+    right: 7px;
+    bottom: 2px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.checked {
+    background-color: #000;
+}
