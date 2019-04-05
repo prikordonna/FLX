@@ -1,6 +1,6 @@
 const {src, dest, task, series, watch} = require('gulp');
 const babel = require('gulp-babel');
-const less = require('gulp-less');
+const sass = require('gulp-sass');
 const path = require('path');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
@@ -22,28 +22,29 @@ function tinyPng () {
         .pipe(dest('./dist/img'))
 };
 
-function lessTask () {
+function sassTask () {
     return src('./src/less/**/*.scss')
-      .pipe(sourcemaps.init({loadMaps: true}))
-        .pipe(less({
-            paths: [ path.join(__dirname, 'less', 'includes') ]
-        }))
-      .pipe(sourcemaps.write())
-      .pipe(dest('./dist/css'))
+        .pipe(sourcemaps.init({loadMaps: true}))
+        .pipe(concat('style.css'))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
+        .pipe(dest('./dist/css'))
 };
 
 
 function jsTask () {
     return src('./src/js/**/*.js')
-    .pipe(concat('all.js'))
+    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(concat('app.js'))
     .pipe(babel({
         presets: ['@babel/env']
     }))
     .pipe(uglify())
+    .pipe(sourcemaps.write())
     .pipe(dest('./dist/js'))
 }
 
-task('default', series(tinyPng, minify, lessTask, jsTask))
+task('default', series(tinyPng, minify, sassTask, jsTask))
 
 let serverTask = () => {
     browserSync.init({
@@ -55,7 +56,7 @@ let serverTask = () => {
 
 exports.serve = () => {
     serverTask();
-    watch('src/less/*.scss', lessTask).on('change', browserSync.reload);
+    watch('src/less/*.scss', sassTask).on('change', browserSync.reload);
     watch('src/js/*.js', jsTask).on('change', browserSync.reload);
     watch("src/*.html").on('change', browserSync.reload);
 }
