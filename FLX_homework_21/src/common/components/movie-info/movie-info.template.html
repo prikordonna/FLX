@@ -1,0 +1,16 @@
+<div class="movie-info">
+     <h2>{{::$ctrl.movie.title}}</h2>
+     <h3 ng-if="$ctrl.movie.tagline">{{::$ctrl.movie.tagline}}</h3>
+     <img src="{{$ctrl.movie.poster_path}}"
+         alt="{{$ctrl.movie.title}}">
+     <span>
+          <p> Genres: <span ng-repeat="i in $ctrl.movie.genres">{{i}};</span></p>
+          <p>Release date: <strong>{{$ctrl.movie.release_date | date:'MMM d yyyy'}}</strong></p>
+          <p>Budget: {{::$ctrl.movie.budget | currency}}</p>
+          <p>Votes: {{::$ctrl.movie.vote_count | number}}</p>
+          <p>{{::$ctrl.movie.overview}}</p>
+     </span>
+          <a ui-sref="app">Back</a>
+     
+  </div>
+  

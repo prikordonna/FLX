@@ -1,0 +1,9 @@
+<div class="movies">
+  <div class="search"> SEARCH: <input ng-model="$ctrl.query" /> </div>
+  <a ng-repeat="movie in $ctrl.movies | filter:$ctrl.query track by $index " class="movies__overview" fresh-movie
+  ui-sref="movie-info({ movieId: movie.id })">
+    <h2>{{movie.title}}</h2>
+    <img src="{{movie.poster_path}}"
+      alt="{{movie.title}}">
+  </a>
+</div>

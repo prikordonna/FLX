@@ -1,0 +1,10 @@
+.movie--fresh {
+  background-color: #7a3e3e85;
+  border-left: 1px solid #ff2600;
+  border-right: 1px solid #ffffff;
+  border-radius: 1px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-image: linear-gradient(to right, #ff2600 0%, #ffffff 100%), linear-gradient(to right, #ff2600 0%, #ffffff 100%);
+}
