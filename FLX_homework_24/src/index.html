@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock, Paper, or Scissors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1 class="header">Let’s play!</h1>
+
+        <div class="rules">
+            <h3>Here are some rules:</h3>
+            <p>Scissors beats a paper,</p>
+            <p>Paper beats a rock,</p>
+            <p>Rock beats a scissors.</p>
+            <p>And we play up to tree wins!</p>
+        </div>
+
+        <div class="choice">
+            <div class="choice-item rock">
+                <figure><img src="img/rock.jpg" alt="Rock" /></figure>
+                <span>Rock</span>
+            </div>
+            <div class="choice-item paper">
+                <figure><img src="img/paper.jpg" alt="Paper" /></figure>
+                <span>Paper</span>
+            </div>
+            <div class="choice-item scissors">
+                <figure><img src="./scissors.jpg" alt="Scissors" /></figure>
+                <span>Scissors</span>
+            </div>
+        </div>
+        <div class="reset">
+            <button>RESET</button>
+        </div>
+
+        <div class="results">
+            <p class="result-round"></p>
+
+        </div>
+    </main>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
