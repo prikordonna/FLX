@@ -1,0 +1,62 @@
+body {
+    font-weight: 600;
+    font-size: 18px;
+}
+.calculator {
+    position: relative;
+    top: 50px;
+    width: 380px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #302f2f;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow:  1px 0 11px 0px #467374;
+}
+.calculator .calculator-screen {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    background-color: #cacaca;
+}
+.output, .input {
+    text-align: right;
+    font-size: 23px;
+    border-bottom: 3px solid #474747;
+    width: 100%;
+    height: 50%;
+}
+.calculator .calculator-buttons {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.calculator .calculator-buttons .calculator-buttons-row {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+}
+.calculator .calculator-buttons-row .btn {
+    width: 55px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid #dfdfdf;
+    color: #f0f8ff;
+    padding: 10px;
+    margin: 5px;
+}
+
+.calculator-buttons-row .btn#result {
+    width: 140px;
+    background-color: #ff8c00;
+}
+
+#memory, #remove-memory, #reset, .operator{
+    background-color: #467374;
+}
